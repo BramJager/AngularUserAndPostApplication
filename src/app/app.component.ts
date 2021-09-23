@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'AngularWeekOpdracht3';
+
+  toggle: boolean = true;
+
+  toggleMenu(toggle: boolean){
+    this.toggle = toggle;
+  }
 }
+
+

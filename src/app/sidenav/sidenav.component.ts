@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { MatDrawerToggleResult } from '@angular/material/sidenav';
 
 @Component({
   selector: 'app-sidenav',
@@ -8,6 +9,10 @@ import { Component, OnInit } from '@angular/core';
 export class SidenavComponent implements OnInit {
 
   constructor() { }
+
+  @Input() toggle: boolean = true;
+
+  
 
   ngOnInit(): void {
   }

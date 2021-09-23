@@ -1,2 +1,2 @@
-<app-toolbar></app-toolbar>
-<app-sidenav><router-outlet></router-outlet></app-sidenav>
+<app-toolbar (menuButton)="toggleMenu($event)"></app-toolbar>
+<app-sidenav [toggle]="toggle"><router-outlet></router-outlet></app-sidenav>

@@ -5,6 +5,8 @@ import { MatSidenavModule } from '@angular/material/sidenav'
 import { MatListModule } from '@angular/material/list'
 import { MatIconModule } from '@angular/material/icon'
 import { MatButtonModule } from '@angular/material/button'
+import { MatDialogModule } from '@angular/material/dialog';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -27,6 +29,8 @@ import { PostsDetailComponent } from './posts-detail/posts-detail.component';
     PostsDetailComponent
   ],
   imports: [
+    MatDialogModule,
+    HttpClientModule,
     MatButtonModule,
     MatIconModule,
     MatListModule,
