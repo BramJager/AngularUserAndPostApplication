@@ -1,0 +1,32 @@
+<h2 mat-dialog-title>User Detail of {{data.name}}</h2>
+<mat-dialog-content>
+    <mat-list>
+      <mat-list-item> ID: {{data.id}} </mat-list-item>
+      <mat-list-item> Name: {{data.name}} </mat-list-item>
+      <mat-list-item> Username: {{data.username}} </mat-list-item>
+      <mat-list-item> Email: {{data.email}} </mat-list-item>
+      <mat-list style="margin-left:15px;">
+        <mat-list-item class="bold"> Adress: </mat-list-item>
+        <mat-list-item> Street: {{data.address.street}} </mat-list-item>
+        <mat-list-item> Suite: {{data.address.suite}} </mat-list-item>
+        <mat-list-item> City: {{data.address.city}} </mat-list-item>
+        <mat-list-item> Zipcode: {{data.address.zipcode}} </mat-list-item>
+          <mat-list style="margin-left:30px;">
+            <mat-list-item class="bold"> Geo: </mat-list-item>
+            <mat-list-item> Longitude: {{data.address.geo.lng}} </mat-list-item>
+            <mat-list-item> Latitude: {{data.address.geo.lat}} </mat-list-item>
+          </mat-list>
+      </mat-list>
+      <mat-list-item> Phonenumber: {{data.phone}} </mat-list-item>
+      <mat-list-item> Website: {{data.website}} </mat-list-item>
+      <mat-list style="margin-left:15px;">
+        <mat-list-item class="bold"> Company: </mat-list-item>
+        <mat-list-item> Name: {{data.company.name}} </mat-list-item>
+        <mat-list-item> Catch Phrase: {{data.company.catchPhrase}} </mat-list-item>
+        <mat-list-item> BS: {{data.company.bs}} </mat-list-item>
+      </mat-list>
+    </mat-list>
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button mat-button mat-dialog-close>Close</button>
+</mat-dialog-actions>

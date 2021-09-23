@@ -17,6 +17,7 @@ import { PostsComponent } from './posts/posts.component';
 import { UsersComponent } from './users/users.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { PostsDetailComponent } from './posts-detail/posts-detail.component';
+import { UserDialogComponent } from './user-dialog/user-dialog.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { PostsDetailComponent } from './posts-detail/posts-detail.component';
     PostsComponent,
     UsersComponent,
     HomePageComponent,
-    PostsDetailComponent
+    PostsDetailComponent,
+    UserDialogComponent
   ],
   imports: [
     MatDialogModule,

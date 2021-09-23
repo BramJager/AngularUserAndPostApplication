@@ -1,4 +1,6 @@
-<div *ngFor="let post of postList">
-    <div>{{post.id}}</div>
-    <div>{{post.title}}</div>
+<div class="list">
+    <mat-nav-list *ngFor="let post of postList">
+        <a mat-list-item [routerLink]="" (click)="changePost(post.id)">{{post.id}}: {{post.title}}</a>
+    </mat-nav-list>
 </div>
+<app-posts-detail *ngIf="post.id !== 0" class="detail" [post]="post"></app-posts-detail>

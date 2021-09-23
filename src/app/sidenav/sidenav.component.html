@@ -1,4 +1,4 @@
-<mat-sidenav-container color="accent">
+<mat-sidenav-container>
     <mat-sidenav #sidenav [(opened)]="toggle" mode=side> 
       <mat-nav-list>
         <a mat-list-item href=""> Home </a>
@@ -7,7 +7,7 @@
       </mat-nav-list>
     </mat-sidenav>
     <mat-sidenav-content>
-      <div style="height: 88vh;">
+      <div>
         <router-outlet></router-outlet>
       </div>
     </mat-sidenav-content>

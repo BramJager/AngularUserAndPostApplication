@@ -12,9 +12,19 @@ export class PostsComponent implements OnInit {
   constructor(private service: PostService) { }
 
   postList: Post[] = []
+  post: Post = new Post();
+
+
 
   ngOnInit(): void {
     this.service.getAll().subscribe(data => {this.postList = data} );
+  }
+
+  changePost(query: Number) : void{
+    var any = this.postList.find(({ id }) =>  query == id);
+    if(any !== undefined){
+      this.post = any;
+    }
   }
 
 }

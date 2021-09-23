@@ -1,0 +1,20 @@
+.list{
+    overflow-y: auto;
+    overflow-x: hidden;
+    float: left;
+    display: block;
+    max-height: 90vh;
+    max-width: 48vw;
+}
+
+.detail{
+    margin-left: 10px;
+    max-height: 90vh;
+    max-width: 40vw;
+    float: left;
+    right: 0;
+    top: 0;
+    display: block;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
